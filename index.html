@@ -66,10 +66,23 @@
             <div class="conteiner">
                 <div class="hero-conteiner">
                 <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
-                <button type="button" class="order-button">Замовити послугу</button>
+                <button  class="order-button" data-modal-open type="button">Замовити послугу</button>
                 </div>
             </div>
         </section>
+
+        <!-- modal-1 -->
+        <div class="backdrop is-hidden" data-modal>
+            <div class="modal">
+                <button class="btn-close" data-modal-close>
+                    <svg class="icon-close" width="18" height="18">
+                        <use href="./images/icons.svg#close"></use>
+                    </svg>
+                </button>
+
+            </div>
+
+        </div>
 
         <!-- advantages -->
         <section class="advantages-section">
@@ -130,6 +143,9 @@
                         src="./images/general/tablet.jpg" 
                         alt="Займаємось розробкою"
                         width="370">
+                        <div class="bgr-img-description">
+                            <p class="img-description">Десктопні додатки</p>
+                        </div>
                     </li>
 
                     <li class="about-img">
@@ -137,6 +153,9 @@
                         src="./images/general/mobile.jpg" 
                         alt="Займаємось розробкою web-додатків"
                         width="370">
+                        <div class="bgr-img-description">
+                            <p class="img-description">Мобільні додатки</p>
+                        </div>
                     </li>
 
                     <li class="about-img">
@@ -144,6 +163,9 @@
                         src="./images/general/palette.jpg" 
                         alt="Займаємось дизайном"
                         width="370">
+                        <div class="bgr-img-description">
+                            <p class="img-description">Дизайнерські рішення</p>
+                        </div>
                     </li>
                 </ul>
             </div>
@@ -422,7 +444,7 @@
         
 
             <div class="second-footer-conteiner">
-                <h2 class="invite-title">приєднуйтесь</h2>
+                <strong class="invite-title">приєднуйтесь</strong>
                 <ul class="social-list list">
                     <li class="social-item dark-socials">
                         <a class="link social-link" href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
@@ -454,7 +476,8 @@
                 </ul>
             </div>
         </div>
-        </div>
     </footer>
+
+    <script src="./js/modal.js"></script>
 </body>
 </html>
